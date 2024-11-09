@@ -29,14 +29,14 @@ fastify.post('/clicked', async function handler(request, reply) {
             value="some-value"
             hx-get="/clicked"
         >
-            Click me!
+            Click me once more!
         </button>
         </div>
     `;
 });
 
 fastify.get('/clicked', async function handler(request, reply) {
-    return `<span>no more swaps</span>`;
+    return `<span>No more parties</span>`;
 })
 
 try {
